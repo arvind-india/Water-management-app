@@ -112,8 +112,6 @@ public class admin_change_details extends AppCompatActivity {
                         userData.put("Discount",Discount);
                         userData.put("Method",Method);
 
-
-
                         fbDatabaseReference.child("Admin").child(Username).push().updateChildren(userData);
                         for(DataSnapshot areaSnapshot: dataSnapshot.getChildren()) {
                             areaSnapshot.getRef().setValue(null);
