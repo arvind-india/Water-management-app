@@ -64,6 +64,9 @@ public class admin_change_method extends AppCompatActivity {
         City = intent.getStringExtra("City");
         username_password = intent.getStringExtra("username_password");
 
+        cost.setText(Cost);
+        discount.setText(Discount);
+
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         // String method = "2";
